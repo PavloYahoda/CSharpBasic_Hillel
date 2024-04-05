@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasic_Hillel", "CSharpBasic_Hillel\CSharpBasic_Hillel.csproj", "{277FCA3D-4E1F-46B4-A698-733768259E53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277FCA3D-4E1F-46B4-A698-733768259E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277FCA3D-4E1F-46B4-A698-733768259E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277FCA3D-4E1F-46B4-A698-733768259E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277FCA3D-4E1F-46B4-A698-733768259E53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4E056A5-E0F3-444B-9016-E0E9F0C1FE6B}
+	EndGlobalSection
+EndGlobal
