@@ -10,7 +10,13 @@ namespace PriceAndDiscount
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi!");
+            Console.WriteLine("Enter the price, please: ");
+            double price = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the discount percentage: ");
+            int discountInPercent = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Your discount is {price*discountInPercent/100}");
+            Console.ReadKey();
         }
     }
 }
