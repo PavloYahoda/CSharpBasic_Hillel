@@ -10,7 +10,13 @@ namespace Books
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi");
+            string bookTitle = "Atlas Shrugged";
+            string author = "Ayn Rand";
+            int yearOfPublication = 1957;
+            double price = 326.81;
+
+            Console.WriteLine(String.Format("{0} is a {2} novel by {1}. Now this book cost {3} UAH", bookTitle, author, yearOfPublication, price));
+            Console.ReadKey();
         }
     }
 }
