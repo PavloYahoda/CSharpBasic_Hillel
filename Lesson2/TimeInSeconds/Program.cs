@@ -14,7 +14,6 @@ namespace TimeInSeconds
             string userInput = Console.ReadLine();
             bool isStringCorrect = Regex.Match(userInput, @"^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$").Success;
             if (isStringCorrect){
-                Console.WriteLine(isStringCorrect);
                 string[] time = userInput.Split(':');
                 int hours = Convert.ToInt32(time[0]);
                 int minutes = Convert.ToInt32(time[1]);
