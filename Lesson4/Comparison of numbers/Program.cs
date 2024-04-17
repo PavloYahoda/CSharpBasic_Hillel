@@ -17,12 +17,11 @@ namespace Comparison_of_numbers
                 double secondNumber = Convert.ToDouble(Console.ReadLine());
                 string resultOfComparison = ComparisonOfNumbers(firstNumber, secondNumber);
                 Console.WriteLine(resultOfComparison);
-                Console.ReadKey();
             }
-            catch (Exception) {
-                Console.WriteLine("You should enter only numbers");
-                Console.ReadKey();
+            catch (Exception ex) {
+                Console.WriteLine($"Processing failed: {ex.Message}");
             }
+            Console.ReadKey();
         }
         public static string ComparisonOfNumbers(double first, double second) {
             string result;

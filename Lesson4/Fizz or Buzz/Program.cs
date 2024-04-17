@@ -17,19 +17,17 @@ namespace Fizz_or_Buzz
                 if (userInput < 1 || userInput > 100)
                 {
                     Console.WriteLine("Number should be from 1 to 100!");
-                    Console.ReadKey();
                 }
                 else {
                     string result = CheckNumber(userInput);
                     Console.WriteLine(result);
-                    Console.ReadKey();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("You should enter only integer numbers");
-                Console.ReadKey();
+                Console.WriteLine($"Processing failed:", ex.Message);
             }
+            Console.ReadKey();
         }
         public static string CheckNumber(int number) {
             if (number % 15 == 0)
