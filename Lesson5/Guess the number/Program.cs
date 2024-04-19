@@ -12,7 +12,7 @@ namespace Guess_the_number
         {
             Random random = new Random();
 
-            int correctAnswer = random.Next(1, 146);
+            int correctAnswer = random.Next(1, 147);
             int user_input;
             bool isAnswerСorrect = true;
             try
