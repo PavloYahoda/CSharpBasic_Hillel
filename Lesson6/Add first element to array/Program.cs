@@ -16,10 +16,12 @@ namespace Add_first_element_to_array
             int first = GenerateNewElement();
             Console.WriteLine(first);
 
-            int[] changedArr = AddElementToArray(arr, first);
+            int[] extendedArr = ExtendArray(arr, 1);
+            int[] changedArr = AddElementToArray(extendedArr, first);
             Console.WriteLine("[{0}]", string.Join(", ", changedArr));
 
-            int[] changedArr2 = AddElementToArrayManually(changedArr, first);
+            int[] extendedArr2 = ExtendArrayManually(arr, 1);
+            int[] changedArr2 = AddElementToArray(extendedArr2, first);
             Console.WriteLine("[{0}]", string.Join(", ", changedArr2));
 
             Console.ReadKey();
@@ -35,29 +37,31 @@ namespace Add_first_element_to_array
             }
             return array;
         }
-
         public static int GenerateNewElement() {
             Random random = new Random();
             int num = random.Next(-100, 101);
             return num;
         }
-        public static int[] AddElementToArray(int[] array, int num)
+        public static int[] ExtendArray(int[] array, int additionalSize)
         {
-            int[] changedArray = new int[array.Length + 1];
+            int[] changedArray = new int[array.Length + additionalSize];
             Array.Copy(array, 0, changedArray, 1, array.Length);
-            changedArray[0] = num;
             return changedArray;
         }
-        public static int[] AddElementToArrayManually(int[] array, int num)
+        public static int[] ExtendArrayManually(int[] array, int additionalSize)
         {
-            int[] changedArray = new int[array.Length + 1];
-
-            for (int i = 0; i < array.Length; i++) {
+            int[] changedArray = new int[array.Length + additionalSize];
+            for (int i = 0; i < array.Length; i++)
+            {
                 changedArray[i + 1] = array[i];
             }
-
-            changedArray[0] = num;
             return changedArray;
+        }
+
+        public static int[] AddElementToArray(int[] array, int num)
+        {
+            array[0] = num;
+            return array;
         }
     }
 }
