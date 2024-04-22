@@ -11,18 +11,18 @@ namespace Add_first_element_to_array
         static void Main(string[] args)
         {
             int[] arr = CreateArray(10);
-            Console.WriteLine("[{0}]", string.Join(", ", arr));
+            PrintArray(arr);
 
             int first = GenerateNewElement();
             Console.WriteLine(first);
 
             int[] extendedArr = ExtendArray(arr, 1);
             int[] changedArr = AddElementToArray(extendedArr, first);
-            Console.WriteLine("[{0}]", string.Join(", ", changedArr));
+            PrintArray(changedArr);
 
             int[] extendedArr2 = ExtendArrayManually(arr, 1);
             int[] changedArr2 = AddElementToArray(extendedArr2, first);
-            Console.WriteLine("[{0}]", string.Join(", ", changedArr2));
+            PrintArray(changedArr2);
 
             Console.ReadKey();
 
@@ -62,6 +62,9 @@ namespace Add_first_element_to_array
         {
             array[0] = num;
             return array;
+        }
+        public static void PrintArray(int[] array) {
+            Console.WriteLine("[{0}]", string.Join(", ", array));
         }
     }
 }
