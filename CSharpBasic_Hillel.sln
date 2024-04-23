@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add first element to array"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print elements", "Lesson6\Print elements\Print elements.csproj", "{F3BA7458-2676-4548-9703-548898F64F2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marks", "Lesson7\Marks\Marks.csproj", "{490CD2CF-9B35-462E-AF76-2053F6EFEC71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{F3BA7458-2676-4548-9703-548898F64F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3BA7458-2676-4548-9703-548898F64F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3BA7458-2676-4548-9703-548898F64F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
