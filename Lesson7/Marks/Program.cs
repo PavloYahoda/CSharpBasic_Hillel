@@ -13,7 +13,6 @@ namespace Marks
             string history = "History";
             string language = "Language";
 
-
             while (true)
             {
                 Console.Write("1.Enter marks of Math\n" +
@@ -28,19 +27,18 @@ namespace Marks
                 switch (input)
                 {
                     case "1":
-                        Output(allMarks[0], math);
+                        allMarks[0] = Output(allMarks[0], math);
                         break;
                     case "2":
-                        Output(allMarks[1], history);
+                        allMarks[1] = Output(allMarks[1], history);
                         break;
                     case "3":
-                        Output(allMarks[2], language);
+                        allMarks[2] = Output(allMarks[2], language);
                         break;
                     case "4":
                         ShortOutput(allMarks[0], math);
                         ShortOutput(allMarks[1], history);
                         ShortOutput(allMarks[2], language);
-                       
                         break;
                     case "5":
                         Console.WriteLine("Exiting program");
@@ -79,7 +77,6 @@ namespace Marks
             array[index] = value;
         }
         public static int[] SetMarks(int[] array)
-
         {
             int user_input;
             while (true)
@@ -140,7 +137,7 @@ namespace Marks
         {
             Console.WriteLine("[{0}]", string.Join(", ", array));
         }
-        public static void Output(int[] array, string subject) {
+        public static int[] Output(int[] array, string subject) {
             Console.WriteLine($"You can enter other marks of {subject}. For exit enter 0");
             array = SetMarks(array);
             Console.Write($"Current marks of {subject} are: ");
@@ -148,6 +145,7 @@ namespace Marks
 
             double avg = CalcAverage(array);
             Console.WriteLine($"Average is: {avg:F2}");
+            return array;
         }
         public static void ShortOutput(int[] array, string subject) {
             Console.Write($"Current marks of {subject} are: ");
