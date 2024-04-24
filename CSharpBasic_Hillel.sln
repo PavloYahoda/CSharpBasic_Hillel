@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print elements", "Lesson6\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marks", "Lesson7\Marks\Marks.csproj", "{490CD2CF-9B35-462E-AF76-2053F6EFEC71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empty", "Lesson7\Empty\Empty.csproj", "{25A357E4-4DE0-4525-96AE-FDF945D550F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490CD2CF-9B35-462E-AF76-2053F6EFEC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A357E4-4DE0-4525-96AE-FDF945D550F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A357E4-4DE0-4525-96AE-FDF945D550F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A357E4-4DE0-4525-96AE-FDF945D550F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A357E4-4DE0-4525-96AE-FDF945D550F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
