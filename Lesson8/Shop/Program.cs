@@ -71,8 +71,7 @@ namespace Shop
                     Console.Clear();
                 } while (isEnough);
                 PrintBill(products, prices);
-                totalCost = getTotalCost(prices);
-                Console.WriteLine($"Total cost is: {totalCost,15}");
+                PrintTotalCost(prices);
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -149,7 +148,7 @@ namespace Shop
             }
             return num;
         }
-        private static double getTotalCost(double[] arrayPrice)
+        private static double GetTotalCost(double[] arrayPrice)
         {
             double total = 0;
             int i = 0;
@@ -161,10 +160,31 @@ namespace Shop
         }
         private static void PrintBill(string[] arrayProd, double[] arrayPrice) {
             int i = 0;
-            while (arrayPrice[i] != 0)
+
+            if (arrayProd[0] == null || arrayPrice[0] == 0)
             {
-                Console.WriteLine($"{arrayProd[i],-15} --> {arrayPrice[i],10}");
-                i++;
+                Console.WriteLine("Your cart is empty");
+            }
+            else { 
+                while (arrayPrice[i] != 0)
+                {
+                    Console.WriteLine($"{arrayProd[i],-15} --> {arrayPrice[i],10}");
+                    
+                    i++;
+                }
+            }
+            
+        }
+        private static void PrintTotalCost(double[] arrayPrice) {
+            double totalCost = 0;
+            if (arrayPrice[0] == 0)
+            {
+                return;
+            }
+            else
+            {
+                totalCost = GetTotalCost(arrayPrice);
+                Console.WriteLine($"Total cost is: {totalCost,15}");
             }
         }
     }
