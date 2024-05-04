@@ -16,7 +16,6 @@ namespace Shop
                 int type;
                 bool isEnough = true;
                 double cost;
-                double totalCost;
                 string[] products = new string[50];
                 double[] prices = new double[50];
 
@@ -169,7 +168,6 @@ namespace Shop
                 while (arrayPrice[i] != 0)
                 {
                     Console.WriteLine($"{arrayProd[i],-15} --> {arrayPrice[i],10}");
-                    
                     i++;
                 }
             }
