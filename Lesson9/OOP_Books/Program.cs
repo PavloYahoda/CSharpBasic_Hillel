@@ -18,8 +18,8 @@ namespace OOP_Books
                 NumberOfPages = 503
             };
 
-            book1.DisplayInfo();
-            book1.IsThick();
+            book1.DisplayConsoleBookInfo(book1.GetBookInfo());
+            book1.DisplayConsoleIsThick(book1.IsThick());
 
             Book book2 = new Book
             {
@@ -29,8 +29,8 @@ namespace OOP_Books
                 NumberOfPages = 272
             };
 
-            book2.DisplayInfo();
-            book2.IsThick();
+            book2.DisplayConsoleBookInfo(book2.GetBookInfo());
+            book2.DisplayConsoleIsThick(book2.IsThick());
 
             Console.ReadKey();
         }

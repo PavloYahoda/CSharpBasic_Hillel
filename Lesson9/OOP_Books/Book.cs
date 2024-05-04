@@ -14,24 +14,39 @@ namespace OOP_Books
         public int YearOfPublication { get; set; }
         public int NumberOfPages { get; set; }
 
-        public void DisplayInfo()
+        public string GetBookInfo()
         {
-            Console.WriteLine($"Title: {Title}\n" +
+            return $"Title: {Title}\n" +
                 $"Author: {Author}\n" +
                 $"YearOfPublication: {YearOfPublication}\n" +
-                $"NumberOfPages: {NumberOfPages}");
+                $"NumberOfPages: {NumberOfPages}";
         }
-        public void IsThick()
+        public void DisplayConsoleBookInfo(string bookInfo)
+        {
+            Console.WriteLine(bookInfo);
+        }
+        public bool IsThick()
         {
             if (NumberOfPages > 500)
             {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void DisplayConsoleIsThick(bool isThick)
+        {
+            if (isThick)
+            {
                 Console.WriteLine("This book is thick!");
-                Console.WriteLine("");
+                Console.WriteLine();
             }
             else
             {
                 Console.WriteLine("This book is not so thick!");
-                Console.WriteLine("");
+                Console.WriteLine();
             }
         }
     }
