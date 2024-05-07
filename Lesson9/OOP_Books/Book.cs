@@ -27,14 +27,7 @@ namespace OOP_Books
         }
         public bool IsThick()
         {
-            if (NumberOfPages > 500)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return NumberOfPages > 500
         }
         public void DisplayConsoleIsThick(bool isThick)
         {
