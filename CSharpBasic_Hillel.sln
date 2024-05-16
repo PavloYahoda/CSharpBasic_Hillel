@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkrainianStringUtils", "Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithString", "Lesson11\WorkWithString\WorkWithString.csproj", "{0DE2E663-F857-4D01-90DA-8CF8AF1FC7AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithExceptions", "Lesson11\WorkWithExceptions\WorkWithExceptions.csproj", "{19DB6F58-8EC6-4075-87B6-1096D081D97C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{0DE2E663-F857-4D01-90DA-8CF8AF1FC7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DE2E663-F857-4D01-90DA-8CF8AF1FC7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DE2E663-F857-4D01-90DA-8CF8AF1FC7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DB6F58-8EC6-4075-87B6-1096D081D97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DB6F58-8EC6-4075-87B6-1096D081D97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DB6F58-8EC6-4075-87B6-1096D081D97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DB6F58-8EC6-4075-87B6-1096D081D97C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
