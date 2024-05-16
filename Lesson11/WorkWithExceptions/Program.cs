@@ -10,7 +10,7 @@ namespace WorkWithExceptions
     {
         static void Main(string[] args)
         {
-            int age = 0;
+            int age;
             Console.Write("Enter your age: ");
             try
             {
