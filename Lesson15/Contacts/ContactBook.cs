@@ -20,30 +20,37 @@ namespace Contacts
         }
         public void RemoveContact(string name)
         {
-            bool isExist = false;
-            if (contacts.ContainsKey(name)) {
+            if (contacts.ContainsKey(name))
+            {
                 contacts.Remove(name);
-                isExist = true;
+                Console.WriteLine($"{name} is deleted from Contacts");
             }
-            Console.WriteLine(isExist ? $"{name} is deleted from Contacts" : $"There is no {name} in contacts");
+            else {
+                Console.WriteLine($"There is no {name} in contacts");
+            }
         }
         public void ChangeContact(string name)
         {
-            bool isExistForGhange = false;
-            if (contacts.ContainsKey(name)) {
+
+            if (contacts.ContainsKey(name))
+            {
                 Console.Write("Enter new phone number: ");
                 contacts[name] = Console.ReadLine();
-                isExistForGhange = true;
+                Console.WriteLine($"{name} is changed");
             }
-            Console.WriteLine(isExistForGhange ? $"{name} is changed" : $"There is no {name} in contacts");
+            else {
+                Console.WriteLine($"There is no {name} in contacts");
+            }    
         }
         public void FindContact(string name)
         {
-            bool isFound = false;
-            if (contacts.ContainsKey(name)) {
-                isFound = true;
+            if (contacts.ContainsKey(name))
+            {
+                Console.WriteLine($"{name}: {contacts[name]}");
             }
-            Console.WriteLine(isFound ? $"{name}: {contacts[name]}" : $"There is no {name} in contacts");
+            else {
+                Console.WriteLine($"There is no {name} in contacts");
+            }  
         }
         public void GetAllContacts()
         {
